@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative
+}
+
+.container{
+    min-height: 45%;
+    width: 30%;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+    padding: 0.5rem;
+    border-radius: 1.4rem;
+}
+
+.container h1{
+    text-align: center;
+    padding: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-body{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    gap: 0.2rem;
+}
+
+.input-body label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-body input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.submit-btn{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 1rem;
+    gap: 0.2rem;
+    background-color: #0000EE;
+}
+
+
+.submit-btn button{
+    border: none;
+    background-color: transparent;
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.submit-btn button:hover{
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: #000068;
+    border-radius: 1rem;
+}

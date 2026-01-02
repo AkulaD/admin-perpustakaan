@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data/css/login.css">
+    <title>Login | Perpustakaan</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Login</h1>
+
+    <form id="loginForm">
+        <div class="input-body">
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+        </div>
+
+        <div class="input-body">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+        </div>
+
+        <div class="submit-btn">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+const usernameT = "admin";
+const passwordT = "12345";
+
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === usernameT && password === passwordT) {
+        alert("Login berhasil!");
+        window.location.href = "index.html";
+    } else {
+        alert("Username atau password salah!");
+    }
+});
+</script>
+
+</body>
+</html>
