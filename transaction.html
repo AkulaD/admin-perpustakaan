@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="data/css/index.css">
+    <link rel="stylesheet" href="data/css/transaksi.css">
     <link rel="stylesheet" href="data/css/nav.css">
     <script src="data/js/script.js" defer></script> 
     <title>Transaksi | Perpustakaan</title>
@@ -30,7 +30,68 @@
 </header>
 
 <!-- Bagian Konten -->
-<main>
+<main class="main-content">
+
+    <section class="transaction-page">
+        <h1>Halaman Transaksi</h1>
+        <p>Isi form di bawah untuk mencatat transaksi peminjaman atau pengembalian buku.</p>
+
+        <form class="transaction-form">
+            <div class="form-group">
+                <label for="namaTransaksi">Nama Transaksi</label>
+                <input type="text" id="namaTransaksi" name="namaTransaksi" placeholder="Contoh: Peminjaman Buku">
+            </div>
+
+            <div class="form-group">
+                <label for="jumlah">Jumlah</label>
+                <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah">
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori">
+                    <option value="">-- Pilih Kategori --</option>
+                    <option value="Peminjaman">Peminjaman</option>
+                    <option value="Pengembalian">Pengembalian</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-save">Simpan Transaksi</button>
+        </form>
+
+        <div class="link-daftar">
+            <a href="transaction-list.html">Lihat Daftar Transaksi</a>
+        </div>
+    </section>
+
+    <section class="transaction-list">
+        <h2>Daftar Transaksi</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Transaksi</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Peminjaman Buku Algoritma</td>
+                    <td>1</td>
+                    <td>Peminjaman</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pengembalian Buku Java</td>
+                    <td>1</td>
+                    <td>Pengembalian</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
 </main>
 

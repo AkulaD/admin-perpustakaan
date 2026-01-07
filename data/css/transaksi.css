@@ -1,0 +1,120 @@
+.main-content {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.transaction-page {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.transaction-page h1 {
+    margin-bottom: 0.5rem;
+}
+
+.transaction-page p {
+    margin-bottom: 1.2rem;
+    color: #555;
+}
+
+.transaction-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.btn-save {
+    grid-column: 1 / -1;
+    padding: 0.7rem;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-save:hover {
+    background-color: #1e40af;
+}
+
+.link-daftar {
+    margin-top: 0.5rem;
+}
+
+.link-daftar a {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 0.9rem;
+}
+
+.link-daftar a:hover {
+    text-decoration: underline;
+}
+
+.transaction-list {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.transaction-list h2 {
+    margin-bottom: 1rem;
+}
+
+.transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-list th,
+.transaction-list td {
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.transaction-list th {
+    background-color: #f1f5f9;
+}
+
+.transaction-list tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+}
