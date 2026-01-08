@@ -16,7 +16,7 @@ transactionForm.addEventListener("submit", function (e) {
     const kategori = document.getElementById("kategori").value;
 
     if (nama === "" || jumlah === "" || kategori === "") {
-        alert("Semua field wajib diisi!");
+        alert("Semua form wajib diisi!");
         return;
     }
 
