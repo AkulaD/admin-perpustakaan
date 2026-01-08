@@ -29,24 +29,5 @@
     </form>
 </div>
 
-<script>
-const usernameT = "admin";
-const passwordT = "admin";
-
-document.getElementById("loginForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    if (username === usernameT && password === passwordT) {
-        alert("Login berhasil!");
-        window.location.href = "index.html";
-    } else {
-        alert("Username atau password salah!");
-    }
-});
-</script>
-
 </body>
 </html>
