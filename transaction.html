@@ -36,32 +36,30 @@
         <h1>Halaman Transaksi</h1>
         <p>Isi form di bawah untuk mencatat transaksi peminjaman atau pengembalian buku.</p>
 
-        <form class="transaction-form">
+        <form class="transaction-form" id="transactionForm">
             <div class="form-group">
                 <label for="namaTransaksi">Nama Transaksi</label>
                 <input type="text" id="namaTransaksi" name="namaTransaksi" placeholder="Contoh: Peminjaman Buku">
             </div>
-
             <div class="form-group">
                 <label for="jumlah">Jumlah</label>
                 <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah">
             </div>
-
             <div class="form-group">
-                <label for="kategori">Kategori</label>
+                <label for="kategori">Status</label>
                 <select id="kategori" name="kategori">
-                    <option value="">-- Pilih Kategori --</option>
+                    <option value="">-- Pilih Status --</option>
                     <option value="Peminjaman">Peminjaman</option>
                     <option value="Pengembalian">Pengembalian</option>
                 </select>
             </div>
-
             <button type="submit" class="btn-save">Simpan Transaksi</button>
         </form>
 
         <div class="link-daftar">
             <a href="transaction-list.html">Lihat Daftar Transaksi</a>
         </div>
+
     </section>
 
     <section class="transaction-list">
@@ -73,27 +71,27 @@
                     <th>No</th>
                     <th>Nama Transaksi</th>
                     <th>Jumlah</th>
-                    <th>Kategori</th>
+                    <th>Status</th>
+                    <th colspan="2">Edit</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Peminjaman Buku Algoritma</td>
-                    <td>1</td>
-                    <td>Peminjaman</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Pengembalian Buku Java</td>
-                    <td>1</td>
-                    <td>Pengembalian</td>
-                </tr>
+            <tbody id="transactionBody">
+
             </tbody>
         </table>
     </section>
 
 </main>
+
+<!-- Bagian Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Perpustakaan BSD. All rights reserved.</p>
+        <p class="footer-sub">
+            Aplikasi Perpustakaan Berbasis Web
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
