@@ -14,9 +14,9 @@ let transactions = [
         kategori: "Peminjaman"
     },
     {
-        nama: "Pengembalian Buku Java",
+        nama: "Peminjaman Buku Java",
         jumlah: 1,
-        kategori: "Pengembalian"
+        kategori: "Peminjaman"
     }
 ];
 
